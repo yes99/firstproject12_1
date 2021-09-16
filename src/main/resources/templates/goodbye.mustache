@@ -1,0 +1,44 @@
+{{>layouts/header}}
+<header>
+    <div class="bg-dark text-white p-5">
+        <h1>교육일지 레이아웃 수정</h1>
+    </div>
+</header>
+
+<main>
+
+    <section>
+        <div style="height: auto; width: 100%; border:1px solid gold;">
+            데이터 베이스가 있을 자리
+        </div>
+
+    </section>
+    <section>
+        <b>날짜설정 <br></b>
+        <form>
+            <p><input type="date" id = "ddate"></p>
+        </form>
+    </section>
+
+    <section>
+        <b>수행과제 <br></b>
+        <textarea name="t1" id="tt1" cols="100" rows="10"></textarea>
+    </section>
+
+    <section>
+        <b>수행과정<br></b>
+        <textarea name="t2" id="tt2" cols="100" rows="10"></textarea>
+    </section>
+
+    <section>
+        <b>실패사례<br></b>
+        <textarea name="t3" id="tt3" cols="100" rows="10"></textarea>
+    </section>
+
+    <div id="bb">
+        <button type="button" id="savebutton"> save</button>
+        <button type="button" id="submitbutton"> submit</button>
+        <button type="button" id="debugbutton" onclick="dbug()"> debug</button>
+    </div>
+</main>
+{{>layouts/footer}}
